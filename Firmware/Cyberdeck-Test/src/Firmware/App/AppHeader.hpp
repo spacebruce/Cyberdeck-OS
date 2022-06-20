@@ -11,5 +11,5 @@ namespace Firmware
         GUI::Icon Icon;
     //OS
         void* EntryPoint;
-    }
+    };
 }

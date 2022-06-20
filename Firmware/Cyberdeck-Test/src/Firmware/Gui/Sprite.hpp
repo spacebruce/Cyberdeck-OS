@@ -17,8 +17,11 @@ namespace Firmware {
                 uint8_t BitDepth = 1;
                 bool Dirty = true;
             public:
-                size_t MemoryUsage();
-                static size_t DataLength(size_t Width, size_t Height, uint8_t BitDepth);
+                inline size_t DataLength(size_t Width, size_t Height, uint8_t BitDepth)
+                {
+                    return ((Width * Height) / 8) * BitDepth;
+                }
+
                 //
                 Sprite();
                 ~Sprite();
