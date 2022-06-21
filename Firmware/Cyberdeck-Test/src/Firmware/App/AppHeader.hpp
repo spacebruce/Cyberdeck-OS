@@ -10,6 +10,6 @@ namespace Firmware
         char Name[16];
         GUI::Icon Icon;
     //OS
-        void* EntryPoint;
+        TaskFunction_t EntryPoint;
     };
 }
