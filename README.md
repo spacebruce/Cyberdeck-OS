@@ -4,6 +4,7 @@ havin a laff
 
 basic PDA kinda operating system thing for an ESP32 smashed together with a keyboard and an e-ink display, using FreeRTOS as a base.
 
+Build using VSCode and Platform IO
 
 ## To-do list
 - [ ] Figure out how to structure programs
