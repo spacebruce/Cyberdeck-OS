@@ -1,8 +1,8 @@
-#include "Test.hpp"
+#include "Filebrowser.hpp"
 
-namespace TestApp2
+namespace Filebrowser
 {
-    void Run(void* parameter)
+    void main(void* parameter)
     {
         while(1)
         {

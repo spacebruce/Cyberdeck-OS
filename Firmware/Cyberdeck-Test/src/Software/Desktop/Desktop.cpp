@@ -1,8 +1,8 @@
-#include "Test.hpp"
+#include "Desktop.hpp"
 
-namespace TestApp1
+namespace Desktop
 {
-    void Run(void* parameter)
+    void main(void* parameter)
     {
         while(1)
         {
