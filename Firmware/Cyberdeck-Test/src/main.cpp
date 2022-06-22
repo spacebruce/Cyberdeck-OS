@@ -8,8 +8,8 @@ void setup()
     Serial.begin(115200);
     Serial.println("Startup");
 
-    xTaskCreate(Desktop::main,
-        "Desktop",
+    xTaskCreate(Desktop::Header.EntryPoint,
+        Desktop::Header.Name,
         1024,
         nullptr,
         1,

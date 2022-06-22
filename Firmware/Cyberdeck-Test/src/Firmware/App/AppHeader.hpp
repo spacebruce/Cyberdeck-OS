@@ -1,15 +1,19 @@
 #pragma once
-
+#include <freertos\FreeRTOS.h>
 #include "..\Gui\Icon.hpp"
 
 namespace Firmware
 {
-    struct Appheader
+    class AppHeader
     {
-    //Aesthetic
-        char Name[16];
-        GUI::Icon Icon;
-    //OS
+    public:
+        AppHeader(const char* Name, GUI::Icon* Icon, TaskFunction_t EntryPoint);
+       // ~AppHeader();
+
+        const char* Name;
+        GUI::Icon* Icon;
         TaskFunction_t EntryPoint;
+    private:
     };
+
 }
