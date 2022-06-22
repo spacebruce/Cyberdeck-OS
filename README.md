@@ -1,4 +1,5 @@
-# Cyberdeck-OS
+# ![burger](/Firmware/Assets/Desktop/burger.png) Cyberdeck-OS
+
 just messing around with ideas
 havin a laff
 
@@ -15,7 +16,9 @@ Build using VSCode and Platform IO
 - [ ] Should the desktop itself be a program? I guess so.
 - [ ] come up with a project name
 
-## concept - 
+## concept
 
-![Mockup1](/assets/mockup-desktop.png)
-![Mockup1](/assets/mockup-texteditor.png)
+- ![Mockup1](/assets/mockup-desktop.png)
+- *Desktop. Recent files and quick launch stuff goes here? Maybe make the start button just bring the desktop up?*
+- ![Mockup1](/assets/mockup-texteditor.png)
+- *Text editor, action buttons along the bottom row, content above*
