@@ -17,4 +17,5 @@ Build using VSCode and Platform IO
 
 ## concept - 
 
-![Mockup1](/assets/mockup.png)
+![Mockup1](/assets/mockup-desktop.png)
+![Mockup1](/assets/mockup-texteditor.png)
