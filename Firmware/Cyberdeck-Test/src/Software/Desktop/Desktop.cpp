@@ -2,7 +2,8 @@
 
 namespace Desktop
 {
-    void main(void* parameter)
+
+    void Main(void* parameter)
     {
         while(1)
         {

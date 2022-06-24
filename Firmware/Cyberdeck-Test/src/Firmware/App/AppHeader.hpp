@@ -1,19 +1,17 @@
 #pragma once
 #include <freertos\FreeRTOS.h>
-#include "..\Gui\Icon.hpp"
+#include <functional>
 
 namespace Firmware
 {
     class AppHeader
     {
     public:
-        AppHeader(const char* Name, GUI::Icon* Icon, TaskFunction_t EntryPoint);
-       // ~AppHeader();
+        AppHeader(const char* Name, void (*EntryPoint)(void*));
+        //~AppHeader();
 
         const char* Name;
-        GUI::Icon* Icon;
-        TaskFunction_t EntryPoint;
+        void (*EntryPoint)(void*);
     private:
     };
-
 }
