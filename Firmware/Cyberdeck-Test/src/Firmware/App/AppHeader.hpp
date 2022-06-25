@@ -2,16 +2,13 @@
 #include <freertos\FreeRTOS.h>
 #include <functional>
 
-namespace Firmware
+class AppHeader
 {
-    class AppHeader
-    {
-    public:
-        AppHeader(const char* Name, void (*EntryPoint)(void*));
-        //~AppHeader();
+public:
+    AppHeader(const char* Name, void (*EntryPoint)(void*));
+    //~AppHeader();
 
-        const char* Name;
-        void (*EntryPoint)(void*);
-    private:
-    };
-}
+    const char* Name;
+    void (*EntryPoint)(void*);
+private:
+};
