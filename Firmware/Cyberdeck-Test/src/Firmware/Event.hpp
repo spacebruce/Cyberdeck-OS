@@ -1,38 +1,54 @@
 #pragma once
 #include <cstdint>
 
-enum SystemEventType : uint8_t
+enum AppEventType : uint8_t
 {
-    System, Window, Keyboard, Mouse, 
+    None, System, Window, Keyboard, Mouse, 
 };
 
 //
 struct EventSystem
 {
-    SystemEventType Type = SystemEventType::System;
+    AppEventType Type;
 
 };
+
 struct EventWindow
 {
 
-    SystemEventType Type = SystemEventType::Window;
+    AppEventType Type;
+};
+
+enum KeyboardEventType
+{
+    Keydown, Keyup, 
 };
 struct EventKeyboard
 {
-
-    SystemEventType Type = SystemEventType::Keyboard;
+    AppEventType Type;
+    KeyboardEventType Event;
+    char Keycode[4];
 };
+
 struct EventMouse
 {
-    SystemEventType Type = SystemEventType::Mouse;
+    AppEventType Type;
+    int16_t MouseX;
+    int16_t MouseY;
 };
 
 //
 union AppEvent
 {
-    SystemEventType Type;
+    AppEventType Type;
     EventSystem System;
     EventWindow Window;
     EventKeyboard Keyboard;
     EventMouse Mouse;
 };
+
+AppEvent CreateEventSystem();
+AppEvent CreateEventWindow();
+AppEvent CreateEventKeyboard();
+AppEvent CreateEventMouse();
+AppEvent CreateEvent(AppEventType Type);
